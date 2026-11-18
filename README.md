@@ -20,4 +20,4 @@ For at køre projektet lokalt, følg disse trin:
 
 1. **Klon repositoriet:**
    ```bash
-   git clone https://github.com/[DitBrugernavn]/into-a-dark-forest.git
+   git clone https://github.com/THBA-HTX/IADF.git
