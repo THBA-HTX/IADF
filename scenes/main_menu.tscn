@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://6p6l525kj4p6"]
 
 [ext_resource type="Texture2D" uid="uid://d7wboid64x6x" path="res://sprites/background.jpg" id="1_l6cm7"]
+[ext_resource type="FontFile" uid="uid://gn8rade0x7m" path="res://Pixeled English Font.otf" id="2_ekxnf"]
+[ext_resource type="AudioStream" uid="uid://5j0qdjd2eq3j" path="res://audio/ambient/70100__gregswinford__eerie_forest.mp3" id="3_bqqt6"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m2bt7"]
 texture = ExtResource("1_l6cm7")
@@ -66,3 +68,28 @@ text = "CREDITS"
 [node name="Quit" type="Button" parent="CenterContainer/NinePatchRect/VBoxContainer" unique_id=1012126168]
 layout_mode = 2
 text = "QUIT"
+
+[node name="Label" type="Label" parent="." unique_id=315832778]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -294.0
+offset_top = -228.0
+offset_right = 299.0
+offset_bottom = -162.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 5
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 65
+text = "Into A Dark Forest"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1429360876]
+stream = ExtResource("3_bqqt6")
+volume_db = -16.421
+autoplay = true

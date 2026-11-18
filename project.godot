@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="KingstonForest"
+config/name="Into A Dark Forest"
 run/main_scene="uid://c5hre6ibiis6p"
 config/features=PackedStringArray("4.7", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
