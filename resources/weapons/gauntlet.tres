@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="WeaponItem" format=3 uid="uid://d3bul5x0hho4"]
+
+[ext_resource type="Script" uid="uid://dyqpwqgq8m2w6" path="res://scripts/resources/WeaponItem.cs" id="1_gteod"]
+[ext_resource type="Texture2D" uid="uid://djhvyv5ekgrjo" path="res://sprites/objects/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/16x16/gloves_01a.png" id="1_x8eov"]
+
+[resource]
+script = ExtResource("1_gteod")
+Name = "Gauntlet of Asbest"
+Description = "Denne handske er lavet af asbest. Bæreren af denne handske for instant itching, og en livslængde på -20 år. Men til gengæld giver den +6 damage, på goblins , slimes og mellemledere."
+Icon = ExtResource("1_x8eov")
+metadata/_custom_type_script = "uid://dyqpwqgq8m2w6"

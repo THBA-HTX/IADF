@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cjvtcoiomowlw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v8vfa"]
+
+[node name="PotionPickup" type="Area2D" unique_id=633600516]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1834036324]
+shape = SubResource("RectangleShape2D_v8vfa")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=659436941]

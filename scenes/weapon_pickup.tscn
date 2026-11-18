@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://y1xy1o4j6e1i"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_cnmmx"]
+script/source = "using Godot;
+
+public partial class WeaponPickup : Area2D
+{
+	[Export]
+	public WeaponData Data { get; set; }
+
+	private Sprite2D _sprite;
+	
+	public override void _Ready()
+	{
+		_sprite = GetNode<Sprite2D>(\"Sprite2D\");
+
+		if (Data != null)
+		{
+			_sprite.Texture = Data.icon;
+		}
+		BodyEntered += OnBodyEntered;
+	}
+
+	private void OnBodyEntered(Node2D other)
+	{
+		if (other is Player player)
+		{
+			player.PickUpWeapon(Data);
+			QueueFree();
+		}
+	}
+}
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0reak"]
+
+[node name="WeaponPickup" type="Area2D" unique_id=734137221]
+script = SubResource("CSharpScript_cnmmx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=894142315]
+shape = SubResource("RectangleShape2D_0reak")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2075945187]

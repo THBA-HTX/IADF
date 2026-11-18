@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PotionItem" format=3 uid="uid://cv3q0wc0ewbil"]
+
+[ext_resource type="Texture2D" uid="uid://dbbpwyhcnjyra" path="res://sprites/objects/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/16x16/potion_02c.png" id="1_6ui8w"]
+[ext_resource type="Script" uid="uid://c78tb2bgc3jqs" path="res://scripts/resources/PotionItem.cs" id="1_cx5f2"]
+
+[resource]
+script = ExtResource("1_cx5f2")
+healing = 5
+Name = "Green potion"
+Description = "This mild potion, is made of algee, hair of a virgins cheek and the beak of a medium sized parrot. The potion will provide you with 5 points of health.
+Do not consume this if you are wearing tights.
+"
+Icon = ExtResource("1_6ui8w")
+metadata/_custom_type_script = "uid://c78tb2bgc3jqs"

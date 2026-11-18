@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuestItem" format=3 uid="uid://u5d70mrohlnb"]
+
+[ext_resource type="Texture2D" uid="uid://f2xp5h8mmt8q" path="res://sprites/objects/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/16x16/key_01d.png" id="1_26v28"]
+[ext_resource type="Script" uid="uid://c6k3hlgqvwr4s" path="res://scripts/resources/QuestItem.cs" id="1_y51oh"]
+
+[resource]
+script = ExtResource("1_y51oh")
+QuestID = 1
+Name = "Golden Key"
+Description = "The Golden, is the key the unlocks the Golden Door. Somebody dropped it .. and you found it. hey ..drinks on me."
+Icon = ExtResource("1_26v28")
+metadata/_custom_type_script = "uid://c6k3hlgqvwr4s"

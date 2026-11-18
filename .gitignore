@@ -1,25 +1,37 @@
-# Godot 4.2+ specific ignores
-~*.dll
-
-# Godot 4+ specific ignores
+# --- Godot Generelle ---
 .godot/
-.nomedia
+# I Godot 3.x hed denne .import/
 
-# Godot-specific ignores
-.import/
-export.cfg
-export_credentials.cfg
+# Eksport-filer (Builds)
+export_presets.cfg
+*.exe
+*.pck
+*.zip
+*.app
+*.apk
+*.ipa
+
+# Midlertidige filer og logs
+*.log
 *.tmp
 
-# Imported translations (automatically generated from CSV files)
-*.translation
-
-# Mono-specific ignores
+# --- C# / .NET Specifikke ---
+# Her ignorerer vi de kompilerede filer
+bin/
+obj/
+# Midlertidige mono/dotnet filer
 .mono/
-data_*/
-mono_crash.*.json
 
-# Export outputs
-*.exe
-# Uncomment if your project does not version PCK files as runtime dependencies.
-# *.pck
+# OS-specifikke filer
+.DS_Store
+Thumbs.db
+
+# --- IDE / Editor Specifikke ---
+# Visual Studio
+.vs/
+# JetBrains Rider
+.idea/
+# Visual Studio Code
+.vscode/
+*.sln.user
+*.suo

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://vd0lked4lq0w"]
+
+[ext_resource type="Texture2D" uid="uid://ed6dr38bdti2" path="res://sprites/inventorySlot.png" id="1_tb4qf"]
+[ext_resource type="Script" uid="uid://cf14gvkd8w6t3" path="res://scripts/inventory/SlotUI.cs" id="2_6usns"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i4b1j"]
+atlas = ExtResource("1_tb4qf")
+region = Rect2(0, 0, 20, 20)
+
+[node name="SlotUI" type="PanelContainer" unique_id=715209440]
+custom_minimum_size = Vector2(20, 20)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1132.0
+offset_bottom = -628.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_6usns")
+
+[node name="Icon" type="TextureRect" parent="." unique_id=947287991]
+layout_mode = 2
+texture = SubResource("AtlasTexture_i4b1j")
+expand_mode = 1
+stretch_mode = 5
