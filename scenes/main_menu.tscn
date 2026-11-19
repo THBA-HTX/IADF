@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://6p6l525kj4p6"]
 
 [ext_resource type="Texture2D" uid="uid://d7wboid64x6x" path="res://sprites/background.jpg" id="1_l6cm7"]
+[ext_resource type="Script" uid="uid://bglli1v0bgb7w" path="res://scripts/MainMenu.cs" id="1_wu84c"]
 [ext_resource type="FontFile" uid="uid://gn8rade0x7m" path="res://Pixeled English Font.otf" id="2_ekxnf"]
 [ext_resource type="AudioStream" uid="uid://5j0qdjd2eq3j" path="res://audio/ambient/70100__gregswinford__eerie_forest.mp3" id="3_bqqt6"]
 
@@ -15,6 +16,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_wu84c")
 
 [node name="Panel" type="Panel" parent="." unique_id=1248345324]
 layout_mode = 1
@@ -65,7 +67,7 @@ text = "LOAD GAME"
 layout_mode = 2
 text = "CREDITS"
 
-[node name="Quit" type="Button" parent="CenterContainer/NinePatchRect/VBoxContainer" unique_id=1012126168]
+[node name="ButtonExit" type="Button" parent="CenterContainer/NinePatchRect/VBoxContainer" unique_id=1012126168]
 layout_mode = 2
 text = "QUIT"
 
@@ -93,3 +95,6 @@ text = "Into A Dark Forest"
 stream = ExtResource("3_bqqt6")
 volume_db = -16.421
 autoplay = true
+
+[connection signal="pressed" from="CenterContainer/NinePatchRect/VBoxContainer/New" to="." method="OnStartPressed"]
+[connection signal="pressed" from="CenterContainer/NinePatchRect/VBoxContainer/ButtonExit" to="." method="OnExitPressed"]
