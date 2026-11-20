@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://gn8rade0x7m"
-path="res://.godot/imported/Pixeled English Font.otf-d0516c40b577caf03098b69046351720.fontdata"
+path="res://.godot/imported/Pixeled English Font.otf-9ba758ac39464e2ba439831c5b2e480c.fontdata"
 
 [deps]
 
-source_file="res://Pixeled English Font.otf"
-dest_files=["res://.godot/imported/Pixeled English Font.otf-d0516c40b577caf03098b69046351720.fontdata"]
+source_file="res://fonts/Pixeled English Font.otf"
+dest_files=["res://.godot/imported/Pixeled English Font.otf-9ba758ac39464e2ba439831c5b2e480c.fontdata"]
 
 [params]
 
